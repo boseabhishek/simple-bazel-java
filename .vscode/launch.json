@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyMain",
+            "request": "launch",
+            "mainClass": "main.java.com.abhi.MyMain"
+        }
+    ]
+}

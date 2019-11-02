@@ -1,0 +1,7 @@
+
+java_binary(
+    name = "mymain",
+    srcs = glob(["src/main/java/com/abhi/*.java"]),
+    main_class = "com.abhi.MyMain",
+    deps = ["//another-dir:animal"]
+)

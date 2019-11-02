@@ -1,0 +1,6 @@
+
+java_library(
+    name = "animal",
+    srcs = ["src/main/java/com/abhi/Animal.java"],
+    visibility = ["//main-dir:__pkg__"]
+)
