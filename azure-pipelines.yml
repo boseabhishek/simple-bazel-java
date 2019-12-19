@@ -24,9 +24,5 @@ steps:
   displayName: 'show bazel version'
 
 - script: |
-    bazel version
-  displayName: 'show bazel version'
-
-- script: |
     bazel build //main-dir:mymain 
   displayName: 'bazel build mymain'
