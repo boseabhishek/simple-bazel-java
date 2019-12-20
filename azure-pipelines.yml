@@ -11,14 +11,18 @@ pool:
 
 steps:
 - script: echo Welcome to simple-bazel-project pipline!
-  displayName: 'Welcome info'
+  displayName: 'welcome info'
 
 - script: |
     echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
     curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
     sudo apt-get update && sudo apt-get install -y bazel
-  displayName: 'Install dependencies'
+  displayName: 'install bazel'
 
 - script: |
     bazel version
-  displayName: 'Show bazel version'
+  displayName: 'show bazel version'
+
+- script: |
+    bazel build //main-dir:mymain 
+  displayName: 'bazel build mymain'
